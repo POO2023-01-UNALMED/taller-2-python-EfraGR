@@ -55,7 +55,7 @@ class Auto:
             return "Las piezas no son originales"
         
         for i in range(len(self.asientos)):
-            if self.asientos[i] != self.registro:
+            if (type(self.asientos[i]) == Asiento ) and (self.asientos[i].registro != self.registro):
                 return "Las piezas no son originales"
         
         return "Auto original"
