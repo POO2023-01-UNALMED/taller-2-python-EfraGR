@@ -44,7 +44,11 @@ class Auto:
         
         
     def cantidadAsientos(self) -> int:
-        return len(self.asientos)
+        con +=1
+        for i in range(len(self.asientos)):
+            if (type(self.asientos[i]) == Asiento):
+                con +=1
+        return con
     
     def verificarIntegridad(self) -> str:
         if self.registro != self.motor.registro:
