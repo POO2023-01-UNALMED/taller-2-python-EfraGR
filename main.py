@@ -44,7 +44,7 @@ class Auto:
         
         
     def cantidadAsientos(self) -> int:
-        con +=1
+        con = 0 
         for i in range(len(self.asientos)):
             if (type(self.asientos[i]) == Asiento):
                 con +=1
